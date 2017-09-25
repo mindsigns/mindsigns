@@ -26,6 +26,7 @@ do_cowboy_configure() ->
     Dispatch = cowboy_router:compile([
         {'_', [
             {"/", default_router, <<"base.html">>},
+            {"/about", about_router, <<"about.html">>},
             {"/static/[...]", cowboy_static, {priv_dir, mindsign, "static"}},
             {"/[...]", cowboy_static, {priv_dir, mindsign, "pages"}}
         ]}
