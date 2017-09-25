@@ -1,42 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-  <meta charset="utf-8"/>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <link href="/static/css/font-awesome.min.css" rel="stylesheet"/>
-  <link href="/static/css/style.css" rel="stylesheet"/>
+  	<title> {{ title }} </title>
+  	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="Mindsign dot net">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script> <!-- optional -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/geopattern/1.2.3/js/geopattern.min.js"></script>
+  	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  	<link href="/static/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
 
-  <title>
-      {{ title }}
-  </title>
+  	<link href="/static/css/style.css" rel="stylesheet"/>
+
+	<link rel="icon" href="" type="image/png">
+
  </head>
+
 	<body id="geopattern" class="js-geopattern">
-
-	<center>
-		<h1>MINDSIGNS</h1>
- 		signs of minds
-	</center>
-
+    <div class="header">
+        <h1><a href="/">MINDSIGNS</a></h1> signs of minds
+</div>
 <br>
+    <div class="content">
 {% block body %}
-<p>
-
-</p>
+<div class="box">
+    {{ bin }}
+</div>
 {% endblock %}
+</div>
 <div class="footer">
+        <a href="/"><span class="fa fa-home fa-2x"></span></a>
         <a href="https://github.com/mindsigns"><span class="fa fa-github fa-2x"></span></a>
 		<a href="https://vimeo.com/user36194960"><span class="fa fa-vimeo fa-2x"></span></a>
         <a href="https://www.instagram.com/mindsigns/"><span class="fa fa-instagram fa-2x"></span></a>
-	    <a href="/contact.html"><span class="fa fa-envelope-o fa-2x"></span></a>
+	    <a href="/about"><span class="fa fa-odnoklassniki fa-2x"></span></a>
+	    <a href="/contact"><span class="fa fa-envelope-o fa-2x"></span></a>
 </div>
 
+ </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script> <!-- optional -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/geopattern/1.2.3/js/geopattern.min.js"></script>
 <script>
 options = {color: '#253239' }
 var pattern = GeoPattern.generate('{{ bin }}', options);
 $('#geopattern').css('background-image', pattern.toDataUrl());
 </script>
- </body>
+
  </html>

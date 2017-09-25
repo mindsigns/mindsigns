@@ -1,22 +1,18 @@
 {% extends "base.dtl" %}   
 
 {% block body %}
-<div class="card card-outline-primary text-xs-center">
-  <div class="card-block">
-    <blockquote class="card-blockquote">
-        <p>The death ray, or death beam, was a theoretical particle beam or electromagnetic weapon of the 1920s through the 1930s ...</p>
-
-        <p>Commercially available since the late 1920s, the television set has become commonplace in homes, businesses and institutions, particularly as a vehicle for advertising, a source of entertainment, and news. </p>
-<div class="date"><i>Both entries ripped from wikipedia.</i></div>
+  <div class="box">
 
 <center><h2> . . . . . . . . . . . . . . . . . . . . .  </h2></center>
+<p>
 
-        <p>This site runs on <a href="http://www.openbsd.org">OpenBSD</a> and is served by <a href="http://www.nginx.org">nginx</a>.  I wrote the app using <a href="https://github.com/ninenines/cowboy">Cowboy</a>, written in <a href="http://www.erlang.org/">Erlang</a>.</p>
-        </p> 
-        <p>The images are mine unless otherwise noted.  Images I scrape from the web link back to their source.</p>
+</p>
 
+<p>
+    This site is built with <a href="https://www.erlang.org/">Erlang</a>,
+    <a href="https://ninenines.eu/">Cowboy</a>, <a href="https://github.com/btmills/geopattern">GeoPattern</a>,
+    and <a href="https://purecss.io/">Pure.CSS</a>.
+</p>
 
-    </blockquote>
-  </div>
 </div>
 {% endblock %}

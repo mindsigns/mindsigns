@@ -27,6 +27,7 @@ do_cowboy_configure() ->
         {'_', [
             {"/", default_router, <<"base.html">>},
             {"/about", about_router, <<"about.html">>},
+            {"/contact", contact_router, <<"contact.html">>},
             {"/static/[...]", cowboy_static, {priv_dir, mindsign, "static"}},
             {"/[...]", cowboy_static, {priv_dir, mindsign, "pages"}}
         ]}
