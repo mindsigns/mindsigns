@@ -10,7 +10,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/geopattern/1.2.3/js/geopattern.min.js"></script>
 
   <title>
-	MindSign
+      {{ title }}
   </title>
  </head>
 	<body id="geopattern" class="js-geopattern">

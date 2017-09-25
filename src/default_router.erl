@@ -7,7 +7,7 @@ init(Req, Page) ->
     R = io_lib:format("~p",[AllHeaders]),
     B = lists:flatten(R),
     Bin = base64:encode(B),
-
-    {ok, ResponseBody} = templates_base:render([{bin, Bin}]),
+    Title = "Mindsigns : Home",
+    {ok, ResponseBody} = templates_base:render([{bin, Bin}, {title, Title}]),
     Reply = cowboy_req:reply(200, [{<<"content-type">>, <<"text/html">>}], ResponseBody, Req),
     {ok, Reply, Page}.
