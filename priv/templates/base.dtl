@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="/static/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="/static/css/style.css" rel="stylesheet"/>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script> <!-- optional -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/geopattern/1.2.3/js/geopattern.min.js"></script>
+
+  <title>
+	MindSign
+  </title>
+ </head>
+	<body id="geopattern" class="js-geopattern">
+
+	<center>
+		<h1>MINDSIGNS</h1>
+ 		signs of minds
+	</center>
+
+<br>
+<p>
+</p>
+
+<div class="footer">
+        <a href="https://github.com/mindsigns"><span class="fa fa-github fa-2x"></span></a>
+		<a href="https://vimeo.com/user36194960"><span class="fa fa-vimeo fa-2x"></span></a>
+        <a href="https://www.instagram.com/mindsigns/"><span class="fa fa-instagram fa-2x"></span></a>
+	    <a href="/contact.html"><span class="fa fa-envelope-o fa-2x"></span></a>
+</div>
+
+<script>
+options = {color: '#253239' }
+var pattern = GeoPattern.generate('{{ bin }}', options);
+$('#geopattern').css('background-image', pattern.toDataUrl());
+</script>
+ </body>
+ </html>

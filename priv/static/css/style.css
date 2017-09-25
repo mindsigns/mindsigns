@@ -1,0 +1,58 @@
+html {
+    background:#253239;
+}
+
+body {
+    font-family: 'Montserrat', san-serif;
+    font-size: 1em;
+    color: #fff;
+    margin-left: 1em;
+}
+
+h1 {
+    font-family: 'Montserrat', san-serif;
+    font-size: 6em;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+li {
+    font-family: 'Montserrat', san-serif;
+    font-weight: thin;
+    display: inline-block;
+    float:none;
+    padding: 10px;
+    color: #fff;
+    text-align: justify;
+    word-wrap: break-word;
+    list-style-type: none;
+}
+
+a {
+    color: #fff;
+    font-weight: thin;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4C1201;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer span {
+    padding: .5em;
+}
+
+.js-geopattern {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
