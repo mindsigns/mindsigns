@@ -1,5 +1,0 @@
-Hello from Cowboy!
-
-<div style="width: 200px; overflow-wrap: break-word;">
-{{ bin }}
-</div>
